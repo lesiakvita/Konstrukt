@@ -1,0 +1,261 @@
+@import url("https://fonts.googleapis.com/css2?family=Tourney:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&family=Tourney:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Francois+One&family=Staatliches&family=Tourney:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Francois+One&family=PT+Sans+Narrow:wght@400;700&family=Staatliches&family=Tourney:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Francois+One&family=PT+Sans+Narrow:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Staatliches&family=Tourney:ital,wght@0,100..900;1,100..900&display=swap");
+html,
+body {
+  margin: 0 auto;
+  max-width: 1200px;
+  font-family: "Francois One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  width: 1200px;
+  height: 54px;
+  margin-top: 30px;
+  position: fixed;
+  margin: 0 auto;
+}
+.link {
+  width: 50px;
+  font-family: "Tourney", sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  display: flex;
+  align-items: flex-end;
+  cursor: pointer;
+}
+.left-content {
+  display: flex;
+  align-items: center;
+}
+.menu {
+  list-style: none;
+  text-align: center;
+  margin: 0 auto;
+  display: flex;
+  width: 352px;
+  height: 28px;
+  text-align: center;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.menu_item_sb {
+  position: relative;
+}
+.menu_item_sb::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: black;
+}
+.menu_item:not(:last-child) {
+  margin-right: 10px;
+}
+.menu_link {
+  text-decoration: none;
+  color: #000;
+  font-family: "Staatliches", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.left-content {
+  display: flex;
+  align-items: center;
+}
+
+.right-content {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 238px;
+}
+.bg_pic {
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  padding-top: 150px;
+  padding-left: 540px;
+}
+
+.container {
+  width: 385px;
+  height: 462px;
+  top: 150px;
+  position: fixed;
+}
+.caption {
+  text-transform: uppercase;
+  font-size: 36px;
+  font-family: "Francois One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 2;
+}
+
+.menu_sb {
+  list-style: none;
+  padding: 0;
+}
+
+.content {
+  width: 785px;
+  margin-left: 415px;
+  padding-top: 190px;
+}
+.article {
+  position: relative;
+  padding-top: 1px;
+  margin-bottom: 70px;
+  color: #000;
+}
+
+.title {
+  position: relative;
+  margin: 20px 0;
+  display: inline-block;
+  font-size: 36px;
+  text-transform: uppercase;
+}
+
+.title::before {
+  content: "";
+  position: absolute;
+  top: -15px;
+  left: 0;
+  width: 100px;
+  height: 8px;
+  background: #000;
+}
+
+.sup-title {
+  position: absolute;
+  font-size: 17px;
+  font-weight: 300;
+  bottom: 33px;
+  right: -100px;
+  text-transform: none;
+}
+.article_fixed {
+  position: relative;
+  height: 1000px;
+}
+.text {
+  font-family: "PT Sans Narrow", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 28px;
+}
+.content_sec {
+  width: 785px;
+  margin-left: 415px;
+}
+.text_bold {
+  font-weight: bold;
+}
+.content_pic {
+  width: 326px;
+  height: 48px;
+  padding-top: 150px;
+}
+.article_pic {
+  display: flex;
+  justify-content: flex-start;
+}
+.title_pic::before {
+  content: "";
+  display: inline-block;
+  width: 100px;
+  height: 8px;
+  background-color: black;
+  margin-right: 20px;
+  vertical-align: 8px;
+}
+.title_pic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 36px;
+  line-height: 48px;
+}
+.grid-container {
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  position: relative;
+}
+.grid-container::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: 0;
+  width: 1200px;
+  height: 1px;
+  background: #bfbfbf;
+}
+.grid-container::after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  width: 1200px;
+  height: 1px;
+  background-color: #bfbfbf;
+}
+.grid-item img {
+  width: 270px;
+  height: 180px;
+  border-radius: 8px;
+}
+img {
+  width: 100%;
+}
+
+.flip-card {
+  width: 270px;
+  height: 180px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+}
